@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const me = {
+        x: 120,
+        y: 100,
+        width: 70,
+        height: 100
+    };
+
+    const enemy = [{
+            x: 100,
+            y: 70,
+            width: 100,
+            height: 50
+        },
+        {
+            x: 10,
+            y: 130,
+            width: 100,
+            height: 50
+        },
+        {
+            x: 170,
+            y: 130,
+            width: 50,
+            height: 50
+        }
+    ];
+
+    for (count = 0; count < 3; count++) {
+        if (
+            me.x < enemy[count].x + enemy[count].width &&
+            enemy[count].x < me.x + me.width &&
+            me.y < enemy[count].y + enemy[count].height&&
+            enemy[count].y < me.y + me.height
+        ) {
+            console.log("敵機" + count +"が当たり");
+        }
+    }
+</script>
+
+</html>
