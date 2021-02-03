@@ -9,6 +9,6 @@
 ### 縦方向の判定処理
 敵の原点が左側にある場合と、下側にある場合が想定出来るので、どちらも漏れがないように記述する  
             me.y < enemy[count].y + enemy[count].height&&  
-            enemy[count].y < me.y + me.height  
-上記した4つの式が全てTrueだと「当たっている」判定になる
+            enemy[count].y < me.y + me.height    
+  上記した4つの式が全てTrueだと「当たっている」判定になる
 
